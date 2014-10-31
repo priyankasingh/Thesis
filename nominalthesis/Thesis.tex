@@ -1,0 +1,84 @@
+%% ----------------------------------------------------------------
+%% Thesis.tex
+%% ---------------------------------------------------------------- 
+%% Final copy must be double sided printing.
+\documentclass{ecsthesis}      % Use the Thesis Style
+\graphicspath{{../Figures/}}   % Location of your graphics files
+\usepackage{natbib}            % Use Natbib style for the refs.
+%% \removecolourlinks    % Uncomment this command to remove colour from any links
+\input{Definitions}            % Include your abbreviations
+%% ----------------------------------------------------------------
+\begin{document}
+\frontmatter
+\title      {Purposive Social Network and Linked Data}
+\authors    {\texorpdfstring
+             {\href{mailto:ps1w07@ecs.soton.ac.uk}{Priyanka Singh}}
+             {Priyanka Singh}
+            }
+\department  {Electronics and Computer Science}
+\group       {Web and Internet Science}
+\addresses  {\groupname\\\deptname\\\univname}
+\date       {\today}
+\subject    {}
+\keywords   {}
+\supervisor {Prof Sir Nigel Shadbolt and Dr Elena Simperl}
+\examiner   {Dr Les Carr}
+\maketitle
+\begin{abstract}
+In the era of social web people communicate, collaborate and share online, the social media and social networking is amalgamated together. People live their private and professional lives on the web and connect to their friends, colleagues and peers with common interest using different online mediums and services. Some common means of online communication are emails, instant chat, messaging, forums and content specific social networking websites like Facebook, Twitter and YouTube.
+
+Internet is also an easy medium for people to collaborate and solve problems by collective thinking and effort. Crowdsourcing is an efficient feature of social web where people with common interest and expertise come together to solve specific problems and create a community. Crowdsourcing techniques can also be used to filter out the important information from the collection of large data and remove spams, and gamification techniques are used to reward the users for their contribution and keep a sustainable environment for the growth of the community and network.
+
+Semantic web technologies can be used to structure and community data so it can be decentralized and be used across platform. Using semantic web tools and ontologies different networks can be combined and knowledge can be enhanced and easily discovered and merged together.
+
+This report discusses the concept of purposive social network where people with similar interest and varied expertise come together, use crowdsourcing technique to solve a common problem and build tools for common purpose. StackOverflow and Reddit websites are chosen to study the purposive network, different network ties and roles of user is studied and also Linked Data and semantic web technologies is used for name disambiguation of keywords and topics. This also helps in easier search and discovery of experts in a field and provide useful information that is otherwise unavailable in the website.
+\end{abstract}
+\tableofcontents
+\listoffigures
+\listoftables
+
+%% -----------------------
+%% lstpatch.sty
+%% -----------------------
+%% lstpatch cannot be distributed with these files. I believe it is only needed if the
+%% \lstlistoflistings is used. So this has been turned off by default. Re-add if required:
+%% \usepackage{lstpatch}
+%% \lstlistoflistings
+%% You will need to download lstpatch, possibly from:
+%% http://web.mit.edu/texsrc/source/latex/listings/lstpatch.sty
+%% -----------------------
+
+
+\acknowledgements{I want to take this opportunity to thank my family, especially my mother and my sisters for their support that helped me through the tough times and encouraged me to keep going with my research. I also want to thank my supervisors for their guidance and understanding.
+
+I also want to acknowledge all the online forums and question and answering websites that helped me when I had problems with my programs and providing me with insightful information.}
+\listofsymbols{ll}{
+WWW & World Wide Web\\
+SNS & Social Networking Services\\
+RDF & Resource Description Framework\\
+RDFa & Resource Description Framework-in-attributes\\
+HTTP & Hyper Text Transfer Protocol\\
+FOAF & Friend Of A Friend\\
+SIOC & Semantically Interlinked Online Community\\
+OWL & Web Ontology Language\\
+SSL & Secure Socket Language\\
+RDFS & RDF Schema\\
+SCOT & Social Semantic Cloud of Tags\\
+MOAT & Meaning Of A Tag\\
+OPO & Online Presence Ontology\\
+}
+\mainmatter
+%% ----------------------------------------------------------------
+\include{Introduction}
+\include{Evol}
+\include{PSN}
+\include{Analysis}
+\include{Conclusions}
+\appendix
+\include{AppendixA}
+\backmatter
+\bibliographystyle{apalike}
+\bibliography{ECS}
+\end{document}
+
+%% ----------------------------------------------------------------

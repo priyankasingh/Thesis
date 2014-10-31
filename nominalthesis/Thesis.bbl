@@ -1,0 +1,317 @@
+\begin{thebibliography}{}
+
+\bibitem[Adamic et~al., 2008]{adamic2008knowledge}
+Adamic, L., Zhang, J., Bakshy, E., and Ackerman, M. (2008).
+\newblock Knowledge sharing and yahoo answers: everyone knows something.
+\newblock In {\em Proceedings of the 17th international conference on World
+  Wide Web}, pages 665--674. ACM.
+
+\bibitem[Agichtein et~al., 2008]{agichtein2008finding}
+Agichtein, E., Castillo, C., Donato, D., Gionis, A., and Mishne, G. (2008).
+\newblock Finding high-quality content in social media.
+\newblock In {\em Proceedings of the international conference on Web search and
+  web data mining}, pages 183--194. ACM.
+
+\bibitem[Albors et~al., 2008]{Albors2008}
+Albors, J., Ramos, J., and Hervas, J. (2008).
+\newblock New learning network paradigms: Communities of objectives,
+  crowdsourcing, wikis and open source.
+\newblock {\em International Journal of Information Management}, 28(3):194 --
+  202.
+
+\bibitem[Backstrom et~al., 2006]{backstrom2006group}
+Backstrom, L., Huttenlocher, D., Kleinberg, J., and Lan, X. (2006).
+\newblock Group formation in large social networks: membership, growth, and
+  evolution.
+\newblock In {\em Proceedings of the 12th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 44--54. ACM.
+
+\bibitem[Berners-Lee et~al., 2001]{berners2001semantic}
+Berners-Lee, T., Hendler, J., and Lassila, O. (2001).
+\newblock {The semantic web: Scientific american}.
+\newblock {\em Scientific American}, 284(5):34--43.
+
+\bibitem[Bian et~al., 2008]{bian2008finding}
+Bian, J., Liu, Y., Agichtein, E., and Zha, H. (2008).
+\newblock Finding the right facts in the crowd: factoid question answering over
+  social media.
+\newblock In {\em Proceedings of the 17th international conference on World
+  Wide Web}, pages 467--476. ACM.
+
+\bibitem[Bojars et~al., 2008a]{bojars2008interlinking}
+Bojars, U., Breslin, J., Peristeras, V., Tummarello, G., and Decker, S.
+  (2008a).
+\newblock Interlinking the social web with semantics.
+\newblock {\em Intelligent Systems, IEEE}, 23(3):29--40.
+
+\bibitem[Bojars et~al., 2008b]{bojars2008weaving}
+Bojars, U., Passant, A., Cyganiak, R., and Breslin, J. (2008b).
+\newblock Weaving sioc into the web of linked data.
+\newblock In {\em Linked Data on the Web (LDOW2008)}.
+
+\bibitem[Breslin and Decker, 2007]{breslin2007future}
+Breslin, J. and Decker, S. (2007).
+\newblock The future of social networks on the internet: The need for
+  semantics.
+\newblock {\em Internet Computing, IEEE}, 11(6):86--90.
+
+\bibitem[Breslin et~al., 2005]{breslin2005towards}
+Breslin, J., Harth, A., Bojars, U., and Decker, S. (2005).
+\newblock Towards semantically-interlinked online communities.
+\newblock {\em The Semantic Web: Research and Applications}, pages 71--83.
+
+\bibitem[Brickley and Miller, 2010]{brickley2010foaf}
+Brickley, D. and Miller, L. (2010).
+\newblock Foaf vocabulary specification 0.98.
+\newblock {\em Namespace Document}, 9.
+
+\bibitem[Chi, 2009]{chi2009augmented}
+Chi, E. (2009).
+\newblock Augmented social cognition: using social web technology to enhance
+  the ability of groups to remember, think, and reason.
+\newblock In {\em Proceedings of the 35th SIGMOD international Conference on
+  Management of Data}, pages 973--984. ACM.
+
+\bibitem[Chin and Chignell, 2006]{chin2006social}
+Chin, A. and Chignell, M. (2006).
+\newblock A social hypertext model for finding community in blogs.
+\newblock In {\em Proceedings of the seventeenth conference on Hypertext and
+  hypermedia}, pages 11--22. ACM.
+
+\bibitem[Correndo and Alani, 2007]{correndo2007survey}
+Correndo, G. and Alani, H. (2007).
+\newblock Survey of tools for collaborative knowledge construction and sharing.
+\newblock In {\em Web Intelligence and Intelligent Agent Technology Workshops,
+  2007 IEEE/WIC/ACM International Conferences on}, pages 7--10. IEEE.
+
+\bibitem[Doan et~al., 2011]{doan2011crowdsourcing}
+Doan, A., Ramakrishnan, R., and Halevy, A. (2011).
+\newblock Crowdsourcing systems on the world-wide web.
+\newblock {\em Communications of the ACM}, 54(4):86--96.
+
+\bibitem[Eberhardt, 2012]{Eberhardt2012}
+Eberhardt, C. (2012).
+\newblock Visualising stackoverflow tag relationships with silverlight.
+\newblock Technical report, Scott Logic.
+
+\bibitem[Evans and Chi, 2008]{evans2008towards}
+Evans, B. and Chi, E. (2008).
+\newblock Towards a model of understanding social search.
+\newblock In {\em Proceedings of the 2008 ACM conference on Computer supported
+  cooperative work}, pages 485--494. ACM.
+
+\bibitem[Fitzpatrick and Recordon, 2007]{fitzpatrick2007}
+Fitzpatrick, B. and Recordon, D. (2007).
+\newblock Thoughts on the social graph.
+\newblock {\em Brad Fitzpatrick's Blog}, 17:52.
+
+\bibitem[Flake et~al., 2002]{flake2002self}
+Flake, G., Lawrence, S., Giles, C., and Coetzee, F. (2002).
+\newblock Self-organization and identification of web communities.
+\newblock {\em Computer}, 35(3):66--70.
+
+\bibitem[Garcia et~al., 2009]{garcia2009preliminary}
+Garcia, A., Szomszor, M., Alani, H., and Corcho, O. (2009).
+\newblock Preliminary results in tag disambiguation using dbpedia.
+\newblock {\em First International Workshop on Collective Knowledge Capturing
+  and Representation}.
+
+\bibitem[Garton et~al., 1997]{garton1997studying}
+Garton, L., Haythornthwaite, C., and Wellman, B. (1997).
+\newblock Studying online social networks.
+\newblock {\em Journal of Computer-Mediated Communication}, 3(1):0--0.
+
+\bibitem[Ghosh and Hummel, 2011]{ghosh2011game}
+Ghosh, A. and Hummel, P. (2011).
+\newblock A game-theoretic analysis of rank-order mechanisms for user-generated
+  content.
+\newblock In {\em 12th ACM Conference on Electronic Commerce (EC)}.
+
+\bibitem[Ghosh and McAfee, 2011]{ghosh2011incentivizing}
+Ghosh, A. and McAfee, P. (2011).
+\newblock Incentivizing high-quality user-generated content.
+\newblock In {\em Proceedings of the 20th international conference on World
+  wide web}, pages 137--146. ACM.
+
+\bibitem[Glaser et~al., 2009]{Glaser2009}
+Glaser, H., Jaffri, A., and Millard, I. (2009).
+\newblock Managing co-reference on the semantic web.
+\newblock In {\em WWW2009 Workshop: Linked Data on the Web (LDOW2009)}.
+
+\bibitem[Glaser et~al., 2007]{glaser2007coreference}
+Glaser, H., Lewy, T., Millard, I., and Dowling, B. (2007).
+\newblock On coreference and the semantic web.
+\newblock Technical report, University of Southampton.
+
+\bibitem[Gruber, 2008]{Gruber2008}
+Gruber, T. (2008).
+\newblock Collective knowledge systems: Where the social web meets the semantic
+  web.
+\newblock {\em Web Semantics: Science, Services and Agents on the World Wide
+  Web}, 6(1):4 -- 13.
+\newblock Semantic Web and Web 2.0.
+
+\bibitem[Hurst, 2007]{hurst2007}
+Hurst, M. (2007).
+\newblock The blogosphere: A fresh view.
+\newblock Technical report, ICWSM.
+
+\bibitem[Jain et~al., 2009]{jain2009designing}
+Jain, S., Chen, Y., and Parkes, D. (2009).
+\newblock Designing incentives for online question and answer forums.
+\newblock In {\em Proceedings of the 10th ACM conference on Electronic
+  commerce}, pages 129--138. ACM.
+
+\bibitem[Jain and Parkes, 2009]{jain2009role}
+Jain, S. and Parkes, D. (2009).
+\newblock The role of game theory in human computation systems.
+\newblock In {\em Proceedings of the ACM SIGKDD Workshop on Human Computation},
+  pages 58--61. ACM.
+
+\bibitem[Katz et~al., 2004]{katz2004network}
+Katz, N., Lazer, D., Arrow, H., and Contractor, N. (2004).
+\newblock Network theory and small groups.
+\newblock {\em Small group research}, 35(3):307--332.
+
+\bibitem[Kleinberg, 1999]{kleinberg1999authoritative}
+Kleinberg, J. (1999).
+\newblock Authoritative sources in a hyperlinked environment.
+\newblock {\em Journal of the ACM (JACM)}, 46(5):604--632.
+
+\bibitem[Lawrence~Page and Winograd, 1999]{page1999pagerank}
+Lawrence~Page, Sergey~Brin, R.~M. and Winograd, T. (1999).
+\newblock The pagerank citation ranking: Bringing order to the web.
+\newblock Technical report, Stanford InfoLab.
+
+\bibitem[Mika, 2005]{mika2005flink}
+Mika, P. (2005).
+\newblock Flink: Semantic web technology for the extraction and analysis of
+  social networks.
+\newblock {\em Web Semantics: Science, Services and Agents on the World Wide
+  Web}, 3(2):211--223.
+
+\bibitem[Millard et~al., 2010]{millard2010consuming}
+Millard, I., Glaser, H., Salvadores, M., and Shadbolt, N. (2010).
+\newblock {Consuming multiple linked data sources: Challenges and Experiences}.
+\newblock Technical report, University of Southampton.
+
+\bibitem[Milne and Witten, 2012]{milne2012open}
+Milne, D. and Witten, I. (2012).
+\newblock An open-source toolkit for mining wikipedia.
+\newblock {\em Artificial Intelligence}.
+
+\bibitem[Monge and Contractor, 2003]{monge2003theories}
+Monge, P. and Contractor, N. (2003).
+\newblock {\em Theories of communication networks}.
+\newblock Oxford University Press, USA.
+
+\bibitem[Newman, 2004]{newman2004detecting}
+Newman, M. (2004).
+\newblock Detecting community structure in networks.
+\newblock {\em The European Physical Journal B-Condensed Matter and Complex
+  Systems}, 38(2):321--330.
+
+\bibitem[Nielsen and McKinsey, 2011]{nm2011}
+Nielsen and McKinsey (2011).
+\newblock Nm incite social media report.
+\newblock Technical report, NM Incite.
+
+\bibitem[Prud'Hommeaux et~al., 2008]{prud2008sparql}
+Prud'Hommeaux, E., Seaborne, A., et~al. (2008).
+\newblock Sparql query language for rdf.
+\newblock {\em W3C recommendation}, 15.
+
+\bibitem[Richardson and Domingos, 2003]{richardson2003building}
+Richardson, M. and Domingos, P. (2003).
+\newblock Building large knowledge bases by mass collaboration.
+\newblock In {\em Proceedings of the 2nd international conference on Knowledge
+  capture}, pages 129--137. ACM.
+
+\bibitem[Ridings and Gefen, 2004]{ridings2004virtual}
+Ridings, C. and Gefen, D. (2004).
+\newblock Virtual community attraction: Why people hang out online.
+\newblock {\em Journal of Computer-Mediated Communication}, 10(1):00--00.
+
+\bibitem[Rowe et~al., 2009]{rowe2009interlinking}
+Rowe, M. et~al. (2009).
+\newblock Interlinking distributed social graphs.
+\newblock In {\em Proc. Linked Data on the Web Workshop, WWW09. Madrid, Spain}.
+
+\bibitem[Segaller et~al., 1999]{segaller1999nerds}
+Segaller, S. et~al. (1999).
+\newblock {\em Nerds 2.0. 1: a brief history of the Internet}.
+\newblock TV Books, LLC.
+
+\bibitem[Shadbolt et~al., 2006]{shadbolt2006semantic}
+Shadbolt, N., Hall, W., and Berners-Lee, T. (2006).
+\newblock {The semantic web revisited}.
+\newblock {\em Intelligent Systems, IEEE}, 21(3):96--101.
+
+\bibitem[Singh et~al., 2009]{singh2009motivating}
+Singh, V., Jain, R., and Kankanhalli, M. (2009).
+\newblock Motivating contributors in social media networks.
+\newblock In {\em Proceedings of the first SIGMM workshop on Social media},
+  pages 11--18. ACM.
+
+\bibitem[Smith, 2008]{smith2008social}
+Smith, E. (2008).
+\newblock Social relationships and groups: New insights on embodied and
+  distributed cognition.
+\newblock {\em Cognitive Systems Research}, 9(1):24--32.
+
+\bibitem[Stats, 2012]{internetsats}
+Stats, I.~W. (2012).
+\newblock Internet world stats.
+\newblock Technical report, Internet World Stats.
+
+\bibitem[Stenmark, 2002]{stenmark2002information}
+Stenmark, D. (2002).
+\newblock Information vs. knowledge: The role of intranets in knowledge
+  management.
+\newblock In {\em System Sciences, 2002. HICSS. Proceedings of the 35th Annual
+  Hawaii International Conference on}, pages 928--937. IEEE.
+
+\bibitem[Tantipathananandh et~al., 2007]{tantipathananandh2007}
+Tantipathananandh, C., Berger-Wolf, T., and Kempe, D. (2007).
+\newblock A framework for community identification in dynamic social networks.
+\newblock In {\em Proceedings of the 13th ACM SIGKDD international conference
+  on Knowledge discovery and data mining}, pages 717--726. ACM.
+
+\bibitem[Treude et~al., 2011]{treude2011programmers}
+Treude, C., Barzilay, O., and Storey, M. (2011).
+\newblock How do programmers ask and answer questions on the web?: Nier track.
+\newblock In {\em Software Engineering (ICSE), 2011 33rd International
+  Conference on}, pages 804--807. IEEE.
+
+\bibitem[von Ahn, 2006]{von2006games}
+von Ahn, L. (2006).
+\newblock Games with a purpose.
+\newblock {\em Computer}, 39(6):92--94.
+
+\bibitem[von Ahn, 2009]{von2009human}
+von Ahn, L. (2009).
+\newblock Human computation.
+\newblock In {\em Design Automation Conference, 2009. DAC'09. 46th ACM/IEEE},
+  pages 418--419. IEEE.
+
+\bibitem[von Ahn et~al., 2003]{vonAhn2003}
+von Ahn, L., Blum, M., Hopper, N., and Langford, J. (2003).
+\newblock Captcha: Using hard ai problems for security.
+\newblock In Biham, E., editor, {\em Advances in Cryptology 'EUROCRYPT 2003},
+  volume 2656 of {\em Lecture Notes in Computer Science}, pages 646--646.
+  Springer Berlin / Heidelberg.
+
+\bibitem[von Ahn and Dabbish, 2004]{vonAhn2004}
+von Ahn, L. and Dabbish, L. (2004).
+\newblock Labeling images with a computer game.
+\newblock In {\em Proceedings of the SIGCHI conference on Human factors in
+  computing systems}, CHI '04, pages 319--326, New York, NY, USA. ACM.
+
+\bibitem[Whitelaw et~al., 2011]{Whitelaw2011}
+Whitelaw, C., Agrawal, M., Rao, H., and Oh, O. (2011).
+\newblock Using social media to study social pheonomena: An example using
+  twitter data.
+\newblock In {\em Wireless Telecommunications Symposium (WTS), 2011}, pages 1
+  --3.
+
+\end{thebibliography}
