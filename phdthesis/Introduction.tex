@@ -4,47 +4,71 @@
 
 
 \chapter{Introduction} \label{Chapter:Introduction}
-You probably found all the files from \cite{Gunn:2001:pdflatex}.
-\tref{Table:tabex} illustrates the results of my work~\citep{Gunn:2011:updated2}.
-\begin{table}[!htb]
-  \centering
-  \begin{tabular}{cc}
-  \toprule
-  \textbf{Training Error} & \textbf{Testing Error}\\
-  \midrule
-  0 & $\infty$\\
-  \bottomrule
-  \end{tabular}
-  \caption{The Results}
-  \label{Table:tabex}
-\end{table}
 
-\fref{Figure:figex} shows why this is the case.
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[width=8cm]{figure}
-  \caption{A colourful picture.}
-  \label{Figure:figex}
-\end{figure}
+In the beginning of World Wide Web (WWW) the documents were linked with each other and with the advent of browsers and search engines, it became easier to search for documents. People created static web page to share information and opinions and used emails to communicate with other people. Web 2.0 has changed how people use and interact in Internet, they moved from static content to more dynamic sharing of information and started to connect with people and objects.
 
-This page shows you a subfigure example in \fref{Figure:figsubex}.
-\begin{figure}[!htb]
-  \centering
-  \subfigure[The left caption]{
-    \includegraphics[width=4.2cm]{figure}
-    \label{Figure:figsubex:left}
-  }
-  \subfigure[The right caption]{
-    \includegraphics[width=4.2cm]{figure}
-    \label{Figure:figsubex:right}
-  }
-  \caption{A doubly colourful picture.}
-  \label{Figure:figsubex}
-\end{figure}
+Now in WWW, not only documents are linked with each other using hyperlinks, people are also connected with each other using explicit relationship or through data, creating a personal social network. Data is not shared mere through webpages, it is shared using the social network of people and information travels faster using the social networking effect and creates larger impact.
 
-Example of~\eref{eq:equation1}.
-\begin{equation}
-y = ax^2 + bx + c
-\label{eq:equation1}
-\end{equation}
+There are many different Social networking Service (SNS) available fore people to sign up, create a profile by adding personal information and create links and relationships with friends, families or colleagues. Different SNS provides different functionalities, for e.g., Facebook  \footnote{\url{http://www.facebook.com/}}  is for people to connect with their friends, LinkedIn \footnote{\url{https://www.linkedin.com/}} to connect with their colleagues and Twitter  \footnote{\url{http://twitter.com/}} for microblogging. There are also content specializing services, YouTube \footnote{\url{http://www.youtube.com/}} for videos, Flickr \footnote{\url{http://www.flickr.com/}} for pictures, GoodReads \footnote{\url{http://www.goodreads.com/}} for books.
 
+The main drawback of current services is that they are all closed network and the SNS own all the users data i.e. users cannot take their data away with them once they delete their account and leave that website or the website closes down. Another drawback of this system is that if people want to sign up to different website to use their functionality, they have to undergo the same cycle of creating their user profile and add friends to their network again, they cannot migrate their data and social network from one SNS to another. All their data, activities, relationships are trapped inside a silo and the service provider is the owner and in control of the data. This whole cycle of recreating profile and reconnecting with friends and colleagues in different SNS, Brad Fitzpatrick referred as Social Network Fatigue \cite{fitzpatrick2007}.
+
+The Web 2.0 social web has also given a distributed platform for people to come together from different part of the world and collaborate together to solve problems. People form groups and communities based on similar interest and purpose and use the collective intelligence for distributed problem solving and create knowledge. This crowdsourcing technique is different from human-based computing, here people broadcast any problems they have and other users and experts answers and submit solution. Experts and people with similar interest connect with each other, create relationships and communities with strong and weak social bonds. Messaging boards, question-answer forums, wikis are example of this type of social communities where people come together to create an emerging knowledge.
+
+Semantic Web, as envisioned by Sir Tim Berners-Lee is the extension of the World Wide Web that enables people to share content beyond websites, applications and platform. It is an intelligent web of structured data where each resource has a URI and is represented in RDF triples. It is machine-readable and ontologies are implemented to describe the data and to give it meanings, understood by both machines and humans \cite{berners2001semantic}. Semantic Web technologies provides appropriate tools to represent and structure the social networking data to make it portable and it also connects data from different portals to form a decentralized system that can be easily queried across platform and reused.
+
+\section{Research question and challenge}
+
+\subsection{Problem with current social networking services}
+
+There are many social networking websites available on the WWW and each of them has a particular purpose and they target a particular user group. These website are centralized where people sign up, create a profile and invite their friends and create friendships to communicate with each other and share information. These websites can be open, where all the data is visible to all the users, or closed, where only the user sign-in to the website can view any information. In most of the cases, the websites are semi-open where the registered user can see everything and the other user can see partial information on the website. So, all the information is not accessible to everyone.
+
+The other issue with these websites is as previously mentioned is that user does not own the content they created, it is controlled by the website. If any user wishes to delete it's account, they loose all their data, they cannot export their data, their interaction with their friends and migrate to another website. They loose all their data and information once they leave the website. These websites are centralized and have their own APIs, structure and people cannot work across the platform and share information across different social networks. So, it is difficult for a user to maintain multiple accounts and creating different accounts and friendships causes social network fatigue.
+
+Another issue with these services is the same as with the web, search and discovery of information. The search engines can only retrieve information when explicitly asked, it does not return the solution of a problem if it doesn’t exist on a webpage. Using the search function of the website only returns result from their own network. People who want advice and opinion of an expert can join a forum or messaging board or join and email-list but they can only find the subset of experts registered to that service, they loose a whole community of expert in other network or community.
+
+The amount of data created everyday on the web has increased exponentially in the recent years and a fast access to accurate information and key people is essential in the fast moving life and also in the knowledge web. The social networking websites in today's web are like small and separate islands and they need bridges to join together, have a common structure so the heterogenous datasets could be integrated together into a homogenous view to get the full potential of  all the services.
+
+
+\subsection{Research challenges}
+
+The main challenge with the current structure of Word Wide Web and the social networking website is opening the closed data by any users or on any topics.  These data then are required to be represented in a common structure so it can be integrated together to give a complete set of information. The main research question and challenges encountered are discussed below.
+
+\subsubsection{Data Harvest and Data Integration}
+
+The study of online social networks requires user data from the online social networks, forums and communities. Some of forums and boards are open to public and data can be harvested freely using the API and simple screen scraping but most of the social networking websites are closed due to privacy policies and data is not readily available to general public for consumption.
+
+Data from different sources are harvested and structured using the semantic web technology and integrated together. Integration of data from multiple sources causes name entity problem for main topics and also a user might have multiple accounts in different system, so the information from all these different accounts need to be integrated to form a complete and homogeneous user profile. In order to do so, it is possible that the same entities may be retrieved by different data providers that adopted different URIs and names, making paramount to solve problems of coreference and name ambiguity \cite{glaser2007coreference}.
+
+\subsubsection{Purposive Social Network formation}
+
+The concept of a network is very broad that can be associated with any kind of relation between people that can be identified by the set of entities. A social network that is formed by people with a common interest, a goal, an objective or purpose with explicit or implicit relation is studied in this case and named purposive social network.
+
+This network can be a small, temporary community of people solving a problem and then dispersing once the task is finished. The relation between people and objects are varied with different attributes.
+
+In this report, this type of purposive social network is studied in detail, how it is formed, why it is created, it’s different attributes and characteristics are identified. Also, the motivation of people to contribute and collaborate in such network is studied and what type of emergent knowledge and results are generated with the community is analyzed.
+
+\subsubsection{Network Analysis and initial result}
+
+To analyze a purposive social network an open online question and answer forum for programmers and developers, StackOverflow \footnote{\url{http://stackoverflow.com/}}, is studied. This website is used by computer programmers to ask questions on any topics, other expert programmers answer the questions and other users of the website vote the questions and answers and keep quality control.
+
+This website is open to the public and the API is easy to use to collect the data. This is also a good example of purposive social networks where people come together and share knowledge and help solve a problem and gain reputations. Crowdsourcing is used to create an emergent knowledgebase, to filter spam and keep the quality of questions and answers high and the incentive system keeps user motivated to contribute and solve problems.
+
+The public data of the website is analyzed and different characteristics of the purposive social network is studied. Attributes like relationship/links between users, and users and objects that connect every person and entity in the website is analyzed. The incentive model of the website that encourage people to collaborate and contribute is also studied. The structure of the communication and network growth over time is also analyzed \cite{mika2005flink}.
+
+
+\subsubsection{Linking the Data}
+
+The website data is collected and analyzed using Wikipedia-miner \footnote{\url{http://wikipedia-miner.cms.waikato.ac.nz/}} \cite{milne2012open} and OpenCalis \footnote{\url{http://www.opencalais.com/}} toolkit. These tool uses natural language processing to find the main keywords from the text and use machine learning algorithm to match the keywords to topics and particular vocabulary.  Then the posts are structured into RDF and the main entities are matched with Wikipedia articles and Drupal vocabulary. This data is linked with other knowledgebase after the name entity recognition, categorized and integrated with other topics \cite{Glaser2009}.
+
+\section{Structure of the report}
+
+This report is structured into 5 chapters, this is the first chapter which introduces the topic of the research and the questions that need to be answered.
+
+Second chapter gives a background and history of social networking and collective intelligence in the area. It also describes the role of Semantic Web and its technologies in this area. It explains the evolution of the Semantic Web and Linked Data in the area of Social Networks briefly introducing some of the most important and widely used social semantic technologies and applications used nowadays.
+
+Third chapter describes in more detail the topic of purposive social networks and community formation and the motivation of the research explaining why forming a quick and purposeful community is important and how linked data can help in achieving this goal.
+
+Fourth chapter provides analysis of StackOverflow, a question and answer forum for programmers, a purposive social network.  The questions, answers and user information is analyzed to describe the network ties and relationships. The individual role of users is also studied and the incentive model of the website is discussed that motivates user for huge quality contribution. Also, the data is analyzed and shown how link data can help in name and topic disambiguation,  community formation, integration and search and discovery of better information and expert.
+
+Finally, the last chapter concludes this report and describes the future work to be done.
