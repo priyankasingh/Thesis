@@ -1,0 +1,103 @@
+\contentsline {chapter}{Declaration of Authorship}{xiii}{dummy.4}
+\contentsline {chapter}{Acknowledgements}{xv}{dummy.5}
+\contentsline {chapter}{Nomenclature}{xvii}{dummy.6}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}
+\contentsline {section}{\numberline {1.1}Overview}{1}{section.10}
+\contentsline {section}{\numberline {1.2}Research Challenge}{1}{section.11}
+\contentsline {section}{\numberline {1.3}Research Contribution}{1}{section.12}
+\contentsline {section}{\numberline {1.4}Structure of the thesis}{1}{section.13}
+\contentsline {chapter}{\numberline {2}Background}{3}{chapter.14}
+\contentsline {section}{\numberline {2.1}Emergence of Social Web}{5}{section.15}
+\contentsline {subsection}{\numberline {2.1.1}Web 2.0 and Social Networks}{5}{subsection.16}
+\contentsline {subsection}{\numberline {2.1.2}Content-specific Social Networking Services}{5}{subsection.17}
+\contentsline {section}{\numberline {2.2}Collective Intelligence and Crowdsourcing}{5}{section.18}
+\contentsline {subsection}{\numberline {2.2.1}Crowdsourcing Services}{5}{subsection.19}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Wiki}{5}{subsubsection.20}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Forums and Messaging Boards}{5}{subsubsection.21}
+\contentsline {subsubsection}{\numberline {2.2.1.3}Q\&A Services}{5}{subsubsection.22}
+\contentsline {subsection}{\numberline {2.2.2}Human Computation}{5}{subsection.23}
+\contentsline {subsection}{\numberline {2.2.3}User Recommendation System}{5}{subsection.24}
+\contentsline {section}{\numberline {2.3}Semantic Web and Linked Data}{5}{section.25}
+\contentsline {subsection}{\numberline {2.3.1}Social Semantic Technology}{5}{subsection.26}
+\contentsline {subsubsection}{\numberline {2.3.1.1}FOAF}{5}{subsubsection.27}
+\contentsline {subsubsection}{\numberline {2.3.1.2}SIOC}{5}{subsubsection.28}
+\contentsline {subsubsection}{\numberline {2.3.1.3}OPO}{5}{subsubsection.29}
+\contentsline {subsection}{\numberline {2.3.2}Linked Data Technology}{5}{subsection.30}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Linking the Datasets}{5}{subsubsection.31}
+\contentsline {subsection}{\numberline {2.3.3}Open Linked Data and Graph}{5}{subsection.32}
+\contentsline {section}{\numberline {2.4}Semantic Search}{5}{section.33}
+\contentsline {subsection}{\numberline {2.4.1}Keyword Disambiguation}{5}{subsection.34}
+\contentsline {subsection}{\numberline {2.4.2}Concept Mapping}{5}{subsection.35}
+\contentsline {subsection}{\numberline {2.4.3}SPARQL Queries}{5}{subsection.36}
+\contentsline {chapter}{\numberline {3}Purposive Social Network}{7}{chapter.37}
+\contentsline {section}{\numberline {3.1}What is Purposive Social Network}{9}{section.38}
+\contentsline {subsection}{\numberline {3.1.1}Information Based Community}{9}{subsection.39}
+\contentsline {subsection}{\numberline {3.1.2}Interest Based Community}{9}{subsection.40}
+\contentsline {subsection}{\numberline {3.1.3}Expert Based Community}{9}{subsection.41}
+\contentsline {subsection}{\numberline {3.1.4}Location Based Community}{9}{subsection.42}
+\contentsline {section}{\numberline {3.2}Characteristics of Purposive Social Network}{9}{section.43}
+\contentsline {subsection}{\numberline {3.2.1}Community Size}{9}{subsection.44}
+\contentsline {subsection}{\numberline {3.2.2}Focused Interest}{9}{subsection.45}
+\contentsline {subsection}{\numberline {3.2.3}Direct Communication}{9}{subsection.46}
+\contentsline {subsection}{\numberline {3.2.4}Active Participation}{9}{subsection.47}
+\contentsline {subsection}{\numberline {3.2.5}Short Lifespan}{9}{subsection.48}
+\contentsline {subsection}{\numberline {3.2.6}Strong Incentive}{9}{subsection.49}
+\contentsline {section}{\numberline {3.3}Benefits of Purposive Social Network}{9}{section.50}
+\contentsline {subsection}{\numberline {3.3.1}Information Exchange and Self-interest}{9}{subsection.51}
+\contentsline {subsection}{\numberline {3.3.2}Symbiotic Relation and Social Exchange}{9}{subsection.52}
+\contentsline {subsection}{\numberline {3.3.3}Social Recognition and Personal Satisfaction}{9}{subsection.53}
+\contentsline {subsection}{\numberline {3.3.4}Recommendation System}{9}{subsection.54}
+\contentsline {subsection}{\numberline {3.3.5}Expert Finder}{9}{subsection.55}
+\contentsline {section}{\numberline {3.4}Crowdsourcing in Purposive Social Network}{9}{section.56}
+\contentsline {subsection}{\numberline {3.4.1}Recruiting and Retaining Users}{9}{subsection.57}
+\contentsline {subsection}{\numberline {3.4.2}Incentive Model}{9}{subsection.58}
+\contentsline {subsection}{\numberline {3.4.3}Quality Control}{9}{subsection.59}
+\contentsline {subsection}{\numberline {3.4.4}Search and Discovery of Quality Content}{9}{subsection.60}
+\contentsline {section}{\numberline {3.5}Use of Semantic Web and Linked Data in Purposive Social Network}{9}{section.61}
+\contentsline {subsection}{\numberline {3.5.1}Structured Data}{9}{subsection.62}
+\contentsline {subsection}{\numberline {3.5.2}Linking People to People and People to Data}{9}{subsection.63}
+\contentsline {subsection}{\numberline {3.5.3}Multidimensional Network and Graph}{9}{subsection.64}
+\contentsline {subsection}{\numberline {3.5.4}Integrated Knowledgebase}{9}{subsection.65}
+\contentsline {subsection}{\numberline {3.5.5}Smart Query and Search}{9}{subsection.66}
+\contentsline {subsection}{\numberline {3.5.6}Social Network Analysis}{9}{subsection.67}
+\contentsline {chapter}{\numberline {4}System Design and Methodology}{11}{chapter.68}
+\contentsline {section}{\numberline {4.1}Data Mining}{12}{section.69}
+\contentsline {subsection}{\numberline {4.1.1}StackOverflow Data Mining}{12}{subsection.70}
+\contentsline {subsection}{\numberline {4.1.2}Reddit Data Mining}{12}{subsection.71}
+\contentsline {section}{\numberline {4.2}Data Structuring}{12}{section.72}
+\contentsline {subsection}{\numberline {4.2.1}Data Cleaning}{12}{subsection.73}
+\contentsline {subsection}{\numberline {4.2.2}Converting into N-Triples}{12}{subsection.74}
+\contentsline {subsection}{\numberline {4.2.3}Linking the Data}{12}{subsection.75}
+\contentsline {section}{\numberline {4.3}Keyword Disambiguation}{12}{section.76}
+\contentsline {subsection}{\numberline {4.3.1}OpenCalais Service}{12}{subsection.77}
+\contentsline {subsection}{\numberline {4.3.2}DBpedia Spotlight Service}{12}{subsection.78}
+\contentsline {section}{\numberline {4.4}Concept Mapping}{12}{section.79}
+\contentsline {subsection}{\numberline {4.4.1}Keyword Matrix}{12}{subsection.80}
+\contentsline {subsection}{\numberline {4.4.2}Document Term Matrix}{12}{subsection.81}
+\contentsline {section}{\numberline {4.5}Search and Query}{12}{section.82}
+\contentsline {subsection}{\numberline {4.5.1}Database Design}{12}{subsection.83}
+\contentsline {subsection}{\numberline {4.5.2}Searching Answers of Unanswered Questions}{12}{subsection.84}
+\contentsline {subsection}{\numberline {4.5.3}Expert Finder}{12}{subsection.85}
+\contentsline {chapter}{\numberline {5}Purposive Social Network Analysis}{13}{chapter.86}
+\contentsline {section}{\numberline {5.1}Network Linkage and Social Ties}{13}{section.87}
+\contentsline {section}{\numberline {5.2}Role of Individual Actors}{13}{section.88}
+\contentsline {section}{\numberline {5.3}Incentive Design}{13}{section.89}
+\contentsline {section}{\numberline {5.4}Quality Control}{13}{section.90}
+\contentsline {section}{\numberline {5.5}Linked Data Graph}{13}{section.91}
+\contentsline {section}{\numberline {5.6}Discourse Analysis}{13}{section.92}
+\contentsline {chapter}{\numberline {6}Evaluation}{15}{chapter.93}
+\contentsline {section}{\numberline {6.1}Experiment Design}{15}{section.94}
+\contentsline {subsection}{\numberline {6.1.1}Calculating Sample Size}{15}{subsection.95}
+\contentsline {subsection}{\numberline {6.1.2}Selecting Questions}{15}{subsection.96}
+\contentsline {section}{\numberline {6.2}Data Collection}{15}{section.97}
+\contentsline {subsection}{\numberline {6.2.1}Questionnaire Design}{15}{subsection.98}
+\contentsline {subsection}{\numberline {6.2.2}Dataset Frequency Distribution}{15}{subsection.99}
+\contentsline {section}{\numberline {6.3}Results}{15}{section.100}
+\contentsline {subsection}{\numberline {6.3.1}Keywords T-Test}{15}{subsection.101}
+\contentsline {subsection}{\numberline {6.3.2}Q\&A Correlation Test}{15}{subsection.102}
+\contentsline {subsection}{\numberline {6.3.3}Summary}{15}{subsection.103}
+\contentsline {chapter}{\numberline {7}Conclusions}{17}{chapter.104}
+\contentsline {section}{\numberline {7.1}Summary of Results}{17}{section.105}
+\contentsline {section}{\numberline {7.2}Limitation of System}{17}{section.106}
+\contentsline {section}{\numberline {7.3}Future Work}{17}{section.107}
+\contentsline {chapter}{\numberline {A}Stuff}{19}{appendix.108}
