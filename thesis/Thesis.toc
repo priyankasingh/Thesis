@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {1.1}Overview}{1}{section.10}
 \contentsline {section}{\numberline {1.2}Research Challenge}{1}{section.11}
 \contentsline {section}{\numberline {1.3}Research Contribution}{1}{section.12}
-\contentsline {section}{\numberline {1.4}Structure of the thesis}{1}{section.13}
+\contentsline {section}{\numberline {1.4}Structure of Thesis}{1}{section.13}
 \contentsline {chapter}{\numberline {2}Background}{3}{chapter.14}
 \contentsline {section}{\numberline {2.1}Emergence of Social Web}{5}{section.15}
 \contentsline {subsection}{\numberline {2.1.1}Web 2.0 and Social Networks}{5}{subsection.16}
