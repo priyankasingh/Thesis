@@ -11,8 +11,65 @@ Hello
 \subsection{Reddit Data Mining}
 
 \section{Data Structuring}
+
+The data extracted from StackOverflow website is in the form of simple text, some of the posts contain HTML codes but they are snippets of code and are represented as text in the database. The users categorize the posts by using tags and it gives information about the topic and the programming language the question is being asked. The answers do not have special tags but the tags of the questions are applied to the answers as well.
+
+
 \subsection{Data Cleaning}
 \subsection{Converting into N-Triples}
+
+All the user data, post data, votes and badges are transformed in RDF data by applying simple RDF schema and ontologies.
+
+The website only shows basic user profile information due to the privacy reasons and FOAF ontology is used to describe the data. An example of the simple user profile information is as follows:
+
+\begin{verbatim}
+<foaf:Person>
+    <foaf:name> Geoff Dalgas </foaf:name>
+    <foaf:mbox_sha1sum> b437f461b3fd27387c5d8ab47a293d35 </foaf:mbox_sha1sum>
+    <foaf:based_near> Corvallis, OR </foaf:based_near>
+    <foaf:age> 35 </foaf:age>
+    <foaf:OnlineAccount> http://stackoverflow.com/users/2/geoff-dalgas 
+    </foaf:OnlineAccount
+</foaf:Person>
+ \end{verbatim}
+ 
+ Similarly, the posts created by users, the questions and answers are described using SIOC ontology. The content is described and linked with the user RDF using the similar URIs.
+ 
+\begin{verbatim}
+<sioc:Post rdf:about=" http://stackoverflow.com/questions/89228/calling-an-external
+-command-in-python">
+    <dcterms:title>Calling an external command in Python</dcterms:title>
+    <dcterms:created> 2008-09-18T21:42:52.667 </dcterms:created>
+    <sioc:has_container rdf:resource=" http://stackoverflow.com/questions/tagged
+    /python"/>
+    <sioc:has_creator>
+       <sioc:UserAccount rdf:about=" http://stackoverflow.com/users/170339/bludger " 
+       rdfs:label="bludger"> </sioc:UserAccount>
+     </sioc:has_creator>
+     <sioc:content>How can I call an external command in Python</sioc:content>
+     <sioc:topic rdfs:label="python" rdf:resource=" http://stackoverflow.com
+       /questions/tagged/python"/>
+     <sioc:topic rdfs:label="command" rdf:resource=" http://stackoverflow.com
+       /questions/tagged/command"/>
+     <sioc:has_reply>
+        <sioc:Post rdf:about=" http://stackoverflow.com/a/89243/1313327">
+            <sioc:content>Look at the subprocess module in the stdlib: from subprocess 
+             import call call(["ls", "-l"]) The advantage of subprocess vs system is that 
+             it is more flexible (you can get the stdout, stderr, the "real" status code, 
+             better error handling, etc...). I think os.system is deprecated, too, or will
+             be: http://docs.python.org/library/subprocess.html#replacing-older-functions
+             -with-the-subprocess-module For quick/dirty/one time scripts, os.system
+             is enough, though.</sioc:content>
+             <dcterms:created>2008-09-18T23:42:52.667</dcterms:created>
+             <sioc:has_creator>
+                <sioc:UserAccount rdf:about=" http://stackoverflow.com/users/11465
+                 /david-cournapeau" rdfs:label=" david-cournapeau "> </sioc:UserAccount>
+              </sioc:has_creator>
+           </sioc:Post>
+      </sioc:has_reply>
+</sioc:Post>
+\end{verbatim}
+
 \subsection{Linking the Data}
 
 \section{Keyword Disambiguation}
