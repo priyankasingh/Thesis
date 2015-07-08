@@ -4,23 +4,48 @@
 
 
 \chapter{System Design and Methodology} \label{Chapter:System Design and Methodology}
-Hello
+
+This chapter describes in detail how the data was collected and the system was built. StackOverflow and Reddit websites were chosen to collect the data. These website are good example of Purposive Social Networks and they have a good API to collect data. The data is public and open for the users to extract and analyze.
+
+StackOverflow is a question and answering website for programmers where programmers and developers ask questions and experts in the field answer them and solve the problem. This is a popular website and have lots of users, questions and answers. Reddit is another popular website where people share news, information and have discussion. Reddit community is divided and organized based on interest and it’s called subreddit. For the experiment programming based subreddits are chosen to collect data. 
+
+The system is divided into three main parts, data collection, addition of semantics and information retrieval. The image below gives an overall view of different components and system design. It is discussed in more details in the following sections. 
+
+[System design and framework image]
+
 
 \section{Data Mining}
 \subsection{StackOverflow Data Mining}
+
+StackOverflow data is public and have an API to get data. They also provide a regular data dump of all their public data used in creative common license (http://blog.stackexchange.com/category/cc-wiki-dump/). 
+
+The first method used to get majority of the data is the data dump. It is done quarterly and has data about question, answers, comments, user information (public data), badges and votes. The data is in XML format and the files are zipped and shared using P2P torrent. Data dump till June 2014 was downloaded.
+
+The biggest problem faced while processing the XML files was the size. The whole data dump was 35 GB and the biggest file was the posts XML file sized 21 GB. To overcome this problem the files were broken down into smaller files to parse the XML and store it in database. The other issue with the dataset was the encoding. The parser encoded all the text to Unicode and then stored it in the database.
+
+The API was used to get lists of tags, number of questions is per tags, tag synonyms and related tags. The API returns JSON file and file was parsed and stored in the database. API also had limit of 30 calls per minute and the IP address without access token can make total of 10,000 calls. That’s why the data dump was used to get core data and API was used to get specialized data that was not available in data dump.
+
+
 \subsection{Reddit Data Mining}
+
+Reddit has an API that allows to get posts from particular subreddit. For this experiment 15 programming related subreddits were chosen that corresponded to top 10 tags of StackOverflow. These subreddits are – Java, PHP, Python….
+PRAW (Python Reddit API Wrapper) library was used to get the posts, comments, votes, users, flairs, etc. information from every subreddit and the library dealt with the API bandwidth and call limits. The JSON file was parsed by the library and stored in the database.
+
+The main limitation of the Reddit API is that it doesn’t give information after 200 pages and each page contains 25 posts. So every subreddit only provided limited number of posts, it didn’t provide complete datasets in a particular subreddit like StackOverflow. Hence, the Reddit dataset and user profile is incomplete.
+
+
 
 \section{Data Structuring}
 
-The data extracted from StackOverflow website is in the form of simple text, some of the posts contain HTML codes but they are snippets of code and are represented as text in the database. The users categorize the posts by using tags and it gives information about the topic and the programming language the question is being asked. The answers do not have special tags but the tags of the questions are applied to the answers as well.
+All the data was collected, properly encoded and stored in the MySQL database after mining. There are snippets of code is stored as text. The StackOverflow dataset is quite massive, it has [x] million questions, [x] million answers, [x] million votes and [x] million users. To make the dataset manageable and still keeping it complete within the community, top 10 tags were chosen and complete dataset of the tags were turned into N-Triple. Also, Reddit dataset was manageable, so all of the dataset was converted into N-Triple.
 
 
-\subsection{Data Cleaning}
-\subsection{Converting into N-Triples}
+\subsection{Generating RDF}
 
-All the user data, post data, votes and badges are transformed in RDF data by applying simple RDF schema and ontologies.
+The Semantic Web requires the data to be structured properly using some schema to give data meaning. For this system, the data is turned into RDF. It is a data structure format to describe the data and its relationship with the URI. The subject-relation-object model is also called triples.
 
-The website only shows basic user profile information due to the privacy reasons and FOAF ontology is used to describe the data. An example of the simple user profile information is as follows:
+To describe the data in RDF, ontology is used to define the relationship. FOAF ontology is used to describe the users and their profile information. Both StackOverflow and Reddit only shows basic user profile information due to privacy reasons and FOAF ontology is used to describe the data. An example of the simple user profile information is as follows:
+
 
 \begin{verbatim}
 <foaf:Person>
@@ -33,7 +58,7 @@ The website only shows basic user profile information due to the privacy reasons
 </foaf:Person>
  \end{verbatim}
  
- Similarly, the posts created by users, the questions and answers are described using SIOC ontology. The content is described and linked with the user RDF using the similar URIs.
+ Similarly, the posts created by users, the questions and answers are described using SIOC ontology. The content is described and linked with the user's RDF using the similar URIs.
  
 \begin{verbatim}
 <sioc:Post rdf:about=" http://stackoverflow.com/questions/89228/calling-an-external
@@ -70,17 +95,128 @@ The website only shows basic user profile information due to the privacy reasons
 </sioc:Post>
 \end{verbatim}
 
-\subsection{Linking the Data}
+// There are limitation to FOAF and SIOC ontology. It doesn’t have term to describe the votes. In that case, RDF schema is defined that adds more vocabulary to describes the up votes and down votes given to the questions, answers and comments. It has 3 property
 
-\section{Keyword Disambiguation}
+:hasVote
+:hasUpVote
+:hasDownVote
+
+The properties are self-explanatory. :hasVote describes the total number of vote a post has. It can be positive or negative. :hasUpVote shows the number of up votes a post has and similarly :hasDownVotes shows the number of down votes a post has.
+
+[give ref schema to describe these properties]
+
+Database… Stardog
+
+
+\section{Keyword Annotation and Linking}
+
+The StackOverflow dataset is sparsely annotated by user-generated tags and it is not linked with any other datasets. When user creates a question, they add tags to it to categorize into different topics but the answers have the tags from the questions. During data collection, question tag is added to the answers as well by the system.
+
+Reddit dataset has not tags at all, during data mining process the name of the subreddit is added as the tag to the post and comments. This works for language specific subreddit like Python and PHP but doesn’t work for general programming subreddit like ‘learnprogramming’.
+
+This causes problem in finding the topic and category of the questions, answers and posts. This is one of the problem fixed by the system. The main topics inside the text of question and answer is not clearly stated. The topics are ambiguous and not linked to any vocabulary or properly annotated. This problem is resolved by doing keyword disambiguation using tools like Wikipediaminer and OpenCalis.
+
+The question, answer and tag data is annotated with the links from Wikipedia datasets and Drupal datasets to resolve the name and topic disambiguation. These services do the name entity recognition and match the entities with the appropriate topics and categories. The service does not convert the text into Linked Data or RDF, the returned data is further transformed into RDF and linked with DBpedia dataset.
+
+Both services do the name entity recognition and match it to a known vocabulary and taxonomy. They do a natural language processing of the text and annotate the keywords. This annotation is then matched with the Wikipedia topics and the StackOverflow and Reddit data is linked to the Wikipedia and Drupal data.
+
+\subsection{Wikipedia Miner Service}
+
+Wikipedia Miner service is used to annotate posts from top 10 tags of StackOverflow and Reddit. The service returns the text with annotated topics embedded into the text. The service accepts simple text or HTML and one can specify the density of links to be added and the level of accuracy required from the service. Below is an example annotated text of a question and answer posted.
+
+
+[image showing text annotation]
+
+The Wikipedia miner service uses a word sense disambiguation based machine learning algorithm and where it detects key terms in a text excerpt and disambiguating then against Wikipedia article. It provides a JAVA API to access the Wikipedia database, including all the categories and it can be searched, browsed and iterated over \cite{milne2012open}.
+
 \subsection{OpenCalais Service}
-\subsection{DBpedia Spotlight Service}
 
-\section{Concept Mapping}
-\subsection{Keyword Matrix}
-\subsection{Document Term Matrix}
+OpenCalais is another web service used to annotate the StackOverflow posts with the Drupal dataset. This tool creates a semantic rich metadata for the content using the natural language processing, machine learning and name disambiguation algorithm. It provides many services; it provides tag integration with different taxonomy and vocabulary, geo-mapping of location and semantic annotation of keywords. An example annotation of text using OpenCalais is below.
 
-\section{Search and Query}
-\subsection{Database Design}
-\subsection{Searching Answers of Unanswered Questions}
+Text sample question: "Does Python have a ternary conditional operator? If not available, is it possible to simulate one concisely using other language constructs?"
+
+\begin{verbatim}
+<SocialTags>
+  <SocialTag importance="2"> Conditional
+	<originalValue>Conditional (programming)</originalValue>
+  </SocialTag>
+  <SocialTag importance="2"> Python
+  	<originalValue>Python (programming language)</originalValue>
+  </SocialTag>
+  <SocialTag importance="2"> C
+  	<originalValue>C (programming language)</originalValue>
+  </SocialTag>
+  <SocialTag importance="2"> Ternary operation
+  	<originalValue>Ternary operation</originalValue>
+  </SocialTag>
+  <SocialTag importance="1"> Software engineering
+  	<originalValue>Software engineering</originalValue>
+  </SocialTag>
+  <SocialTag importance="1"> Computing
+  	<originalValue>Computing</originalValue>
+  </SocialTag>
+  <SocialTag importance="1"> Computer programming
+  	<originalValue>Computer programming</originalValue>
+  </SocialTag>
+</SocialTags>
+\end{verbatim}
+
+As seen from above snippet, the OpenCalais service finds the keywords and matches it with a taxonomy or vocabulary and assigns the importance to the tag that it is disambiguating.
+http://www.opencalais.com/documentation/calais-web-service-api/api-metadata/entity-relevance-score
+
+
+The keywords are linked to Drupal dataset.
+http://www.opencalais.com/documentation/linked-data-entities
+https://permid.org/
+
+
+\section{Information Retrieval}
+
+The RDF data is stored into the database and the next step is to optimize the database index to improve the search and discovery of answers and experts. This will improve the search result and make the system faster. 
+
+Stardog database is used to store the RDF and triples. This database is good with keywords search.
+
+
+\subsection{Document Keyword Matrix}
+
+All the questions, answers and comments have keywords associated with it. These keywords also have categories. To improve the database index a document keyword matrix is generated.
+
+This follows the same principle as Latent Semantic Analysis and TF-IDF (Term Frequency- Inverse Document Frequency) Weighting. There is bidirectional relationship between a document (questions, answer, comments) and keywords. The frequency of occurrence of each keyword in a document is calculated and also total frequency of documents for each term is calculated. Since, there are limited number of keywords, so it is easier to calculate the document frequency for each keyword.
+
+[image showing the relationship of keywords and documents]
+
+The frequency of keywords in each document is counted and added as a term frequency triple. Also, the frequency of all the documents for each keyword is counted and added as document frequency triple.
+
+This is useful because it helps to determine the importance of a keyword in each document and also minimises the query run time when searching for documents for particular keywords or set of keywords.
+
+
+\subsection{SPARQL Query}
+
+The database have all the questions, answers and keywords as N-Triple  and they are indexed. Stardog database is used for the experiment as it runs on multiple platform and have easy to use SPARQL endpoint for the application to use.
+
+Stardog uses Lucene text analyzer to index the database and this analyzer is customizable. The database is customized by adding the keyword matrix to the ‘commongram’ analyzer that constructs n-grams for frequently occurring keywords and ‘ngram’ analyzer that constructs n-gram tokenizers and filters for multiple keywords.
+
+The unanswered question from StackOverflow and Reddit is used as a query to find the answers. The application used the unanswered questions from the top 10 tags. These questions are also annotated with keywords and these keywords are disambiguated and linked with categories and DBpedia cloud.
+
+The first step of searching the answers is using the keyword matrix to find the best match. The query result is limited to the score greater than 0.5. If there are results with score more than 0.5 then the votes of the answers are used to sort them. Top five results of the returned query with it’s original question is shown as the final result of the query.
+
+If in the initial query there are no results with the score greater than 0.5 then the search term is expanded from keywords to include the categories of the keywords. This helps to find the similar questions and answers in the same programming categories, they might not be about the exact topic. Again, the votes of each answers are used to sort them and top five results are shown. If there are no answers with score more than 0.5 then no results are shown in the application.
+
+
+https://github.com/complexible/stardog-examples/tree/master/examples/analyzer
+
+https://lucene.apache.org/core/4_7_2/analyzers-common/org/apache/lucene/analysis/ngram/package-summary.html
+
+https://lucene.apache.org/core/4_7_2/analyzers-common/org/apache/lucene/analysis/commongrams/package-summary.html
+
 \subsection{Expert Finder}
+
+The questions, answers and keyword matrix is extended to users. The users are linked with the keyword matrix and its votes to create a user keyword matrix. Every document has a user associated with it, this helps in joining the keywords with the users. Also, keywords have categories related with them, it makes a graph of users related to categories too.
+
+[image of user-keyword-vote graph]
+
+Search of experts are done similarly to the answers. The keywords of the question is matched with the user's keywords and the user with score greater than 0.5 is returned in a list. This list is sorted by the overall votes the user received for the keywords combined together.
+
+If there are no users with score greater than 0.5 then the keywords are expanded to include the categories. Then the users with highest votes in those categories are recommended as experts. Top 5 experts are returned in the search result as recommended expert in the field.
+
+The users have additional information associated with them like their location, latest activity, posting history, etc. This could be used to modify the query result to find the experts in the same time zone, or experts who were recently active and post on the website.

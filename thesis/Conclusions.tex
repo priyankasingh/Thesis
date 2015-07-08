@@ -4,8 +4,61 @@
 
 
 \chapter{Conclusions} \label{Chapter: Conclusions}
-It works.
 
-\section{Summary of Results}
+Social interaction and creating a social network is part of human nature, we can find the network by studying their communication process. World Wide Web has not only made it easier and simpler for people to connect and interact, it has also made it easier to study these networks. 
+
+People not only connect to their friends and families, they also interact with strangers from all over the world, they create a network and community with people with similar interest and expertise. They use the community to solve their problems and web has provided a platform for this. Forums and question-answering systems have made it easier for them to create a network, share their problems and queries and seek solutions for their problems. This community and system is defined as Purposive social network in this thesis.
+
+This chapter summarises the research question, the findings and research contribution.
+
+\section{Summary of Research}
+
+In this thesis different types of social networking services available in the Web is analyzed and the motivation of creating communities is seen. In the current web, an agile approach is taken to create a network of people based on a topic and interest. People come together with common purpose and solve problems and create purposive social network. This network is small, agile and thrives on the user contribution. Different types of crowdsourcing system are also described where people come together to solve problems and create a knowledgebase. This type of system requires a strong framework to support engagement and incentive for people to contribute.
+
+\subsection{Limitation of current systems}
+
+The main limitation of these websites are that they are closed and users have to create multiple accounts across different websites to use their services. There is no proper way to merge different social network and knowledgebase together. People are stuck in a silos and they don’t have freedom to move to different network and take their data and network with them. 
+
+In this thesis technology based and forums and question-answering system is studied. They are StackOverflow, a question and answer forum where programmers ask questions about their problems and errors and experts in the field answer them and provide solutions. Another website used for research is the programming communities of Reddit. People can ask questions as well as share current news and other information. These websites use crowdsourcing to find the best questions, answers and resources. Crowdsourcing is used to maintain the quality of the content, to moderate the community and to stop spams and other antisocial activities.
+
+These website are quite popular and lots of people post questions and many of the questions goes unanswered or do not have any comments and solutions. The people in the long tail do not get any response. Normal search can be performed and different search engines can be used to look for answers for these questions but they use text search to find solutions and can’t access data from closed system. Also, these search engines don’t use the network structure or other crowdsourcing methods to find answers or experts that can help with solving the problem.
+
+\subsection{Research Question}
+
+In this thesis it is studied to see if Linked Data and Semantic Web technology can be used to find answers for these unanswered questions. These technologies can be used to get different concept and categories of questions and can provide broader search terms to overcome these issues. Also, the social network of the community can be studied and user model can be generated to find experts in the area and they can be recommended to get answers for the unanswered questions. It could improve the long tail of users who don’t find solutions for their questions.
+
+\sybsection{Research Contribution}
+
+StackOverflow and Reddit websites are used to collect the data. A system is created to use the APIs of the website and collect questions, answers, posts, votes and user profiles. The data is analyzed to see the structure of the community, the network is not form by explicit connection of users but by studying the user interaction and how the knowledge is connected with each other. The network ties, user interaction and the incentive model is studied to see how the website with a small community of programmers created a self-sustaining environment for user to participate and continuously create high quality questions and answers and solve problems.
+
+The system also converts the data of top 10 programming languages into RDF. It cleans the data and add ontology and metadata and structures the data collected. It then uses Wikipedia miner and Open Calais tools to annotate the dataset with keywords, solve the name-entity disambiguation problem. These tools perform a natural language processing on the text and uses machine learning algorithm to match the name with Wikipedia topic and Drupal vocabulary. The keywords and topics are categorized and linked with Dbpedia and Drupal knowledgebases and link the data to Linked Data Cloud.
+
+The system also creates a document and keyword frequency matrix to improve the search. This matrix links the questions with keywords as well as keywords with all the questions, answers and experts linked with. These links are also weighted by the votes given to questions, answers and the frequency of the keywords. The data is used to improve the indexing of the database and SPARQL search results. 
+
+To evaluate the system, unanswered questions from the system are used as search query and the answers are saved. The system also recommends experts that are best suited to answer the question. An experiment is designed where people were shown the keywords and answers and asked to rate the quality of the search result.
+
+Statistical analysis is done on the experiment result and it shows that the keyword generated by the system is better than the tags given to the original website data. It also shows that the people agree with the algorithm rating for answers provided by the system.
+
+The system helps to answers the research question and shows that Semantic web technologies and Linked Data can be used to solve the data integration problem of the current web and can be used to integrate heterogeneous systems. The added semantic and linking of the data can help improve the search for unanswered questions in the PSN system that are overwhelmed by number of posts and don’t have answers for all the questions. Semantic Web and Linked data provide a decentralized platform where user generated knowledge can be utilized, improved and help make a community better. It can also recommend experts to create a community for a particular purpose and solve problems. The system provides a platform to integrate different forums and purposive social network to improve the long tail of users that do get the help they ask from the websites.
+
 \section{Limitation of System}
+
+The system helps to show the utility of Linked Data to solve the PSN problem but it has it’s limitation. The system uses the StackOverflow and Reddit data and uses their crowdsourcing data to get the information about the question and answer quality. Any limitation of the original website data is the limitation of the system too. If the user of StackOverflow and reddit stop giving the votes or if the website is filled with spammers then the current system won’t be able to mitigate the situation.
+
+The system uses external tools like Wikipedia Miner and OpenCalais to annotate the text and find the best match for DBpedia and Drupal topics to link. Any limitation of these tools are limitation of the system. Even though the system only accepts keywords and links that have confidence score greater than 50\%, still sometimes the keywords are linked to the incorrect concepts. Also, if there are no Wikipedia or Drupal article for any concept, then those keywords are ignored by the system, even though they are valid keywords.
+
+Currently, the system doesn’t have a user interface. It uses the websites unanswered questions as search terms. So users can’t ask their own questions to search for answers and similar questions. Also, lack of user interface also doesn’t use the crowdsourcing technology to rate the quality of the search result. These limitations can be improved in the future by adding a top layer over the search algorithm that uses crowdsourcing to improve to rate the quality of the system.
+
+The Expert Finder application of the system is not evaluated by the people in the experiment. There was no easy and simple way to provide a complete user profile of every user to the people in experiment and then ask them to rate the expert recommender. Although, the same algorithm that is used to improve the search of answers is used to search for experts. But the experiment result to evaluate the search algorithm for answers can’t be extended to the experts.
+
+The search engines like Google, Bing, etc. use quite sophisticated text search and pagerank algorithm. They crawl the entire webs and find the best match for the search result. Due to limited resources the system only uses two website and provide answers from those dataset. But this was proof of concept, this result doesn’t say the system provides better result than the current search engines.
+
 \section{Future Work}
+
+The system currently does not have any user interface, as said earlier in the limitation, a user interface will let people enter their own questions and help in finding similar questions and answer from StackOverflow and Reddit. Also, another layer of crowdsourcing on top of the system will allow users to upvote and downvote the answers and improve the search result.
+
+Currently, system recommends experts that are best suited to answer the question. The system could be extended to create community and a agile purposive social network. People can use the system to find the right experts to solve their problem, get details of the experts and contact them. The system will get better by adding more communities and website data to the knowledgebase. People can create a agile PSN and find people on different communities and thus extend their own social network.
+
+Currently, the system uses external tools for data annotation to find important topic and categories and link it to the Linked Data cloud. There are research going on deep learning techniques in Natural Language Processing that helps in finding deeper semantics, synonyms and categories to the text. This layer could be on top of the annotation layer. The extracted keywords and extra information from the deep learning algorithms might not be linked to the Linked Data Cloud but it would certainly improve the document keyword matrix. This would improve the overall search results and help find better question and answers in broader and narrower topics.
+
+The system will get better the more dataset it has and knowledgebase it is linked to as it provides a tool for data integration across platforms and it is possible to create a unified knowledgebase from different networks of web communities. Some of the data in the web is freely available but most of the data is still bound behind the closed walls of different websites. Using the APIs of the websites and with the proper encouragement and initiative of users, they can free their own data. These different knowledgebase can be integrated using the semantic web technologies and can be linked with the Linked Data Cloud and improve the community experience.
